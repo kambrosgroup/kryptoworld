@@ -25,6 +25,10 @@ title = 'KryptoWorld'
     name = 'Guides'
     url = '/guides/'
     weight = 40
+  [[menu.main]]
+    name = 'Tools'
+    url = '/tools/'
+    weight = 50
 
 [permalinks]
   posts = '/:slug/'
@@ -33,3 +37,7 @@ title = 'KryptoWorld'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[imaging]
+  quality = 85
+  resampleFilter = 'lanczos'

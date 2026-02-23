@@ -1,37 +1,117 @@
 {{ define "main" }}
-<div class="hero">
+<!-- Hero Section -->
+<section class="hero animate-fade-in">
+    <div class="hero-badge">
+        <span>🚀</span>
+        <span>Trusted by 10,000+ beginners</span>
+    </div>
+    
     <h1>Navigate Crypto with Confidence</h1>
+    
     <p>Honest exchange reviews, security guides, and beginner-friendly tutorials. No hype, no moon promises—just the facts you need to make smart decisions.</p>
-    <a href="/guides/" class="btn">Start Learning</a>
-</div>
-
-<section style="margin-top: 4rem;">
-    <h2 style="text-align: center; margin-bottom: 2rem;">Latest Guides</h2>
-    <ul class="post-list">
-        {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
-        <li class="post-item">
-            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <div class="post-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
-            <p class="post-excerpt">{{ .Summary }}</p>
-        </li>
-        {{ end }}
-    </ul>
+    
+    <div class="hero-buttons">
+        <a href="/guides/" class="btn">Start Learning →</a>
+        <a href="/exchanges/" class="btn btn-secondary">Compare Exchanges</a>
+    </div>
 </section>
 
-<section style="margin-top: 4rem; text-align: center;">
-    <h2>Why KryptoWorld?</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; text-align: left;">
-        <div class="card">
-            <h3>🔍 Honest Reviews</h3>
-            <p>We test every platform ourselves. If an exchange has high fees or poor support, we say so.</p>
+<!-- Category Pills -->
+<div class="category-pills">
+    <a href="/exchanges/" class="pill">🏦 Exchanges</a>
+    <a href="/wallets/" class="pill">🔐 Wallets</a>
+    <a href="/guides/" class="pill">📚 Guides</a>
+    <a href="/tools/" class="pill">🛠️ Tools</a>
+</div>
+
+<!-- Latest Articles -->
+<section class="features">
+    <div class="section-header">
+        <h2>Latest Guides</h2>
+        <p>Fresh content to help you navigate the crypto landscape</p>
+    </div>
+    
+    <div class="post-grid">
+        {{ range first 6 (where .Site.RegularPages "Type" "posts") }}
+        <article class="post-card">
+            <div class="post-card-image" style="background: {{ if eq .Params.category "exchanges" }}var(--gradient-1){{ else if eq .Params.category "wallets" }}var(--gradient-2){{ else }}var(--gradient-3){{ end }};">
+                {{ if eq .Params.category "exchanges" }}🏦{{ else if eq .Params.category "wallets" }}🔐{{ else if eq .Params.category "tools" }}🛠️{{ else }}📚{{ end }}
+            </div>
+            <div class="post-card-content">
+                <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</div>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="post-excerpt">{{ .Summary }}</p>
+                
+                <div class="post-tags">
+                    {{ range .Params.tags | first 3 }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/guides/" class="btn btn-outline">View All Guides →</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features" style="background: var(--bg-secondary); margin: 0; padding: 4rem 2rem;">
+    <div class="section-header">
+        <h2>Why KryptoWorld?</h2>
+        <p>We're building the most trusted resource for crypto beginners</p>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Honest Reviews</h3>
+            <p>We test every platform ourselves. If an exchange has high fees or poor support, we say so. No paid placements.</p>
         </div>
-        <div class="card">
-            <h3>🛡️ Security First</h3>
-            <p>Your first priority should be protecting your assets. We teach you how.</p>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Security First</h3>
+            <p>Your first priority should be protecting your assets. We teach you how to store crypto safely from day one.</p>
         </div>
-        <div class="card">
-            <h3>📚 Beginner Friendly</h3>
+        
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Beginner Friendly</h3>
             <p>No jargon, no assumptions. We explain everything from your first Bitcoin purchase onward.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Always Current</h3>
+            <p>Crypto moves fast. We update our guides monthly to keep fees, features, and security advice current.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Save Money</h3>
+            <p>The right exchange can save you hundreds in fees. Our comparisons help you find the cheapest option.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Transparent</h3>
+            <p>We disclose all affiliate relationships. Our recommendations are based on merit, not commissions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="features">
+    <div class="card card-featured" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem;">
+        <h2 style="margin-top: 0;">Ready to Start Your Crypto Journey?</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Join thousands of beginners who've learned to buy, store, and secure crypto safely.</p>
+        
+        <div class="hero-buttons" style="justify-content: center;">
+            <a href="/how-to-buy-bitcoin-safely/" class="btn">Buy Your First Bitcoin →</a>
+            <a href="/best-crypto-exchanges-beginners/" class="btn btn-secondary">Find an Exchange</a>
         </div>
     </div>
 </section>

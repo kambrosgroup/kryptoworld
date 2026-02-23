@@ -1,21 +1,71 @@
 {{ define "main" }}
-<article>
-    <header style="margin-bottom: 2rem;">
-        <h1>{{ .Title }}</h1>
-        <div class="post-meta">
-            {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
-            {{ if .Params.updated }}· Updated {{ .Params.updated }}{{ end }}
+<article class="animate-fade-in">
+    <!-- Article Header -->
+    <header style="text-align: center; padding: 3rem 2rem; max-width: 800px; margin: 0 auto;">
+        {{ if .Params.category }}
+        <div class="hero-badge" style="margin-bottom: 1rem;">
+            {{ if eq .Params.category "exchanges" }}🏦{{ else if eq .Params.category "wallets" }}🔐{{ else if eq .Params.category "tools" }}🛠️{{ else }}📚{{ end }}
+            <span style="text-transform: uppercase;">{{ .Params.category }}</span>
         </div>
+        {{ end }}
+        
+        <h1 style="margin-bottom: 1rem;">{{ .Title }}</h1>
+        
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1.5rem;">{{ .Params.description }}</p>
+        
+        <div class="post-meta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span>📅 {{ .Date.Format "January 2, 2006" }}</span>
+            <span>⏱️ {{ .ReadingTime }} min read</span>
+            {{ if .Params.updated }}
+            <span>🔄 Updated {{ .Params.updated }}</span>
+            {{ end }}
+        </div>
+        
+        {{ if .Params.tags }}
+        <div class="post-tags" style="justify-content: center; margin-top: 1rem;">
+            {{ range .Params.tags | first 5 }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
     </header>
     
-    {{ .Content }}
-    
-    <div class="disclosure">
-        <strong>Disclosure:</strong> This article contains affiliate links. If you sign up through these links, we may earn a commission at no extra cost to you. We only recommend products we've tested or thoroughly researched.
-    </div>
-    
-    <div class="risk-warning">
-        <strong>Risk Warning:</strong> Cryptocurrency investments carry significant risk. Prices can be extremely volatile. Never invest more than you can afford to lose. This content is for educational purposes only and not financial advice.
+    <!-- Article Content -->
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+        {{ .Content }}
+        
+        <!-- Disclosure -->
+        <div class="disclosure">
+            <strong>📢 Disclosure:</strong> This article contains affiliate links. If you sign up through these links, we may earn a commission at no extra cost to you. We only recommend products we've tested or thoroughly researched.
+        </div>
+        
+        <!-- Risk Warning -->
+        <div class="risk-warning">
+            <strong>⚠️ Risk Warning:</strong> Cryptocurrency investments carry significant risk. Prices can be extremely volatile. Never invest more than you can afford to lose. This content is for educational purposes only and not financial advice.
+        </div>
+        
+        <!-- Related Articles -->
+        {{ $related := .Site.RegularPages.Related . | first 3 }}
+        {{ with $related }}
+        <section style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <h3>Related Articles</h3>
+            <div style="display: grid; gap: 1rem;">
+                {{ range . }}
+                <a href="{{ .RelPermalink }}" class="card" style="text-decoration: none;">
+                    <h4 style="margin: 0 0 0.5rem; color: var(--accent-primary);">{{ .Title }}</h4>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">{{ .Summary }}</p>
+                </a>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+        
+        <!-- Newsletter CTA -->
+        <div class="card card-featured" style="margin-top: 3rem; text-align: center;">
+            <h3 style="margin-top: 0;">Stay Updated</h3>
+            <p>Get the latest crypto guides and reviews delivered to your inbox.</p>
+            <a href="#" class="btn" onclick="alert('Newsletter signup coming soon!'); return false;">Subscribe →</a>
+        </div>
     </div>
 </article>
 {{ end }}
