@@ -81,7 +81,7 @@ Most crypto investors. If you're not sure which to pick, start with Koinly.
 <div class="affiliate-box">
     <h4>📊 Try Koinly Free</h4>
     <p>Import your transactions and see your tax liability for free. Pay only when you're ready to download reports.</p>
-    <a href="/go/koinly" class="btn">Get Started with Koinly →</a>
+    <a href="/go/koinly.html" class="btn">Get Started with Koinly →</a>
 </div>
 
 ## CoinLedger: The Budget Option
@@ -248,7 +248,7 @@ The cost of tax software ($50–$300) is trivial compared to the time saved and 
 <div class="affiliate-box">
     <h4>📊 Start Your Crypto Tax Return</h4>
     <p>Import your transactions for free. See your tax liability before paying. Koinly supports 400+ exchanges and wallets.</p>
-    <a href="/go/koinly" class="btn">Try Koinly Free →</a>
+    <a href="/go/koinly.html" class="btn">Try Koinly Free →</a>
 </div>
 
 ---

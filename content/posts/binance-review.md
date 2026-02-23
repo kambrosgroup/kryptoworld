@@ -170,7 +170,7 @@ Binance has never lost user funds permanently. The SAFU fund covered the 2019 ha
 <div class="affiliate-box">
     <h4>💎 Join Binance</h4>
     <p>Lowest fees in the industry and the widest selection of cryptocurrencies. New users may be eligible for sign-up bonuses.</p>
-    <a href="/go/binance" class="btn">Create Binance Account →</a>
+    <a href="/go/binance.html" class="btn">Create Binance Account →</a>
 </div>
 
 ## Binance.US vs Binance.com

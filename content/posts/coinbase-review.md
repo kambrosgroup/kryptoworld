@@ -193,7 +193,7 @@ Coinbase is the best exchange for absolute beginners who prioritize simplicity a
 <div class="affiliate-box">
     <h4>🚀 Get Started with Coinbase</h4>
     <p>New users can earn free crypto through Coinbase Learn and Earn. Start with as little as $2.</p>
-    <a href="/go/coinbase" class="btn">Create Free Account →</a>
+    <a href="/go/coinbase.html" class="btn">Create Free Account →</a>
 </div>
 
 ## Alternatives to Consider

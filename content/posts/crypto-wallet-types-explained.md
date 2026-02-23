@@ -117,8 +117,8 @@ If your phone dies, you lose your recovery phrase, and you lose your crypto. For
 <div class="affiliate-box">
     <h4>🔒 Recommended Hardware Wallets</h4>
     <p>Ledger and Trezor are the industry leaders. Both have excellent security track records and support thousands of cryptocurrencies.</p>
-    <a href="/go/ledger" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
-    <a href="/go/trezor" class="btn btn-secondary">Shop Trezor →</a>
+    <a href="/go/ledger.html" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
+    <a href="/go/trezor.html" class="btn btn-secondary">Shop Trezor →</a>
 </div>
 
 ### Pros

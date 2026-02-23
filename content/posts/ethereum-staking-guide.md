@@ -149,7 +149,7 @@ Staking pools let you stake any amount of ETH and earn rewards without running h
 <div class="affiliate-box">
     <h4>🚀 Start Staking on Binance</h4>
     <p>Low minimums, no technical setup required. Start earning ETH staking rewards with as little as $1.</p>
-    <a href="/go/binance" class="btn">Stake ETH on Binance →</a>
+    <a href="/go/binance.html" class="btn">Stake ETH on Binance →</a>
 </div>
 
 ## Option 3: Exchange Staking (Easiest)

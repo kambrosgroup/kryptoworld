@@ -48,7 +48,7 @@ Can't decide? Start with **Coinbase**. You can always switch later.
 <div class="affiliate-box">
     <h4>🚀 Recommended for First-Time Buyers</h4>
     <p>Coinbase offers the simplest onboarding process and excellent educational resources. New users can earn free crypto while learning.</p>
-    <a href="/go/coinbase" class="btn">Get Started with Coinbase →</a>
+    <a href="/go/coinbase.html" class="btn">Get Started with Coinbase →</a>
 </div>
 
 ## Step 2: Create and Verify Your Account
@@ -126,7 +126,7 @@ Examples:
 <div class="affiliate-box">
     <h4>🔒 Protect Your Investment</h4>
     <p>Hardware wallets keep your crypto offline and safe from hackers. Essential for amounts over $1,000.</p>
-    <a href="/go/ledger" class="btn">Shop Ledger Wallets →</a>
+    <a href="/go/ledger.html" class="btn">Shop Ledger Wallets →</a>
 </div>
 
 ## Common First-Timer Mistakes

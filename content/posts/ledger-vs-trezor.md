@@ -179,8 +179,8 @@ Do those three things, and you're ahead of 95% of crypto users.
 <div class="affiliate-box">
     <h4>🔒 Recommended Hardware Wallets</h4>
     <p>Both Ledger and Trezor offer excellent security. Choose based on your priorities: features (Ledger) or open source (Trezor).</p>
-    <a href="/go/ledger" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
-    <a href="/go/trezor" class="btn btn-secondary">Shop Trezor →</a>
+    <a href="/go/ledger.html" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
+    <a href="/go/trezor.html" class="btn btn-secondary">Shop Trezor →</a>
 </div>
 
 ---

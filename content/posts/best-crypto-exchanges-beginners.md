@@ -56,7 +56,7 @@ Coinbase gets criticized by advanced traders for its fees. Fair enough—their s
 <div class="affiliate-box">
     <h4>🚀 Get Started with Coinbase</h4>
     <p>New users can earn free crypto through Coinbase's Learn and Earn program. Start with as little as $2.</p>
-    <a href="/go/coinbase" class="btn">Create Free Account →</a>
+    <a href="/go/coinbase.html" class="btn">Create Free Account →</a>
 </div>
 
 ### 2. Kraken: The Security-First Choice
@@ -81,7 +81,7 @@ Kraken has been around since 2013. In crypto years, that's ancient. They've neve
 <div class="affiliate-box">
     <h4>🔒 Start with Kraken</h4>
     <p>Industry-leading security with lower fees than most competitors. Perfect for security-conscious beginners.</p>
-    <a href="/go/kraken" class="btn">Sign Up for Kraken →</a>
+    <a href="/go/kraken.html" class="btn">Sign Up for Kraken →</a>
 </div>
 
 ### 3. Binance: The Feature-Rich Option
@@ -106,7 +106,7 @@ Binance is the world's largest exchange by volume. That matters because high liq
 <div class="affiliate-box">
     <h4>💎 Join Binance</h4>
     <p>Lowest fees in the industry and the widest selection of cryptocurrencies. Great for beginners who want to explore.</p>
-    <a href="/go/binance" class="btn">Create Binance Account →</a>
+    <a href="/go/binance.html" class="btn">Create Binance Account →</a>
 </div>
 
 ## Quick Comparison Table

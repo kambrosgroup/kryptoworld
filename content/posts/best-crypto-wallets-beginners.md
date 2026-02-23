@@ -160,8 +160,8 @@ Read our full [Ledger vs Trezor comparison](/ledger-vs-trezor/) for details.
 <div class="affiliate-box">
     <h4>🔒 Secure Your Crypto</h4>
     <p>Hardware wallets keep your private keys offline. Essential for amounts over $1,000.</p>
-    <a href="/go/ledger" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
-    <a href="/go/trezor" class="btn btn-secondary">Shop Trezor →</a>
+    <a href="/go/ledger.html" class="btn" style="margin-right: 1rem;">Shop Ledger →</a>
+    <a href="/go/trezor.html" class="btn btn-secondary">Shop Trezor →</a>
 </div>
 
 ## How to Set Up Your First Wallet
