@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article>
+    <header style="margin-bottom: 2rem;">
+        <h1>{{ .Title }}</h1>
+        <div class="post-meta">
+            {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+            {{ if .Params.updated }}· Updated {{ .Params.updated }}{{ end }}
+        </div>
+    </header>
+    
+    {{ .Content }}
+    
+    <div class="disclosure">
+        <strong>Disclosure:</strong> This article contains affiliate links. If you sign up through these links, we may earn a commission at no extra cost to you. We only recommend products we've tested or thoroughly researched.
+    </div>
+    
+    <div class="risk-warning">
+        <strong>Risk Warning:</strong> Cryptocurrency investments carry significant risk. Prices can be extremely volatile. Never invest more than you can afford to lose. This content is for educational purposes only and not financial advice.
+    </div>
+</article>
+{{ end }}

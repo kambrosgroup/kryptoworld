@@ -1,0 +1,36 @@
+baseURL = 'https://kryptoworld.space'
+languageCode = 'en-us'
+title = 'KryptoWorld'
+theme = 'paper'
+
+[params]
+  author = 'KryptoWorld'
+  description = 'Honest crypto guides for beginners. Exchange reviews, security tips, and unbiased recommendations.'
+  keywords = 'crypto, bitcoin, cryptocurrency, exchange reviews, wallet guides'
+  googleAnalytics = ''
+  
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Exchanges'
+    url = '/exchanges/'
+    weight = 20
+  [[menu.main]]
+    name = 'Wallets'
+    url = '/wallets/'
+    weight = 30
+  [[menu.main]]
+    name = 'Guides'
+    url = '/guides/'
+    weight = 40
+
+[permalinks]
+  posts = '/:slug/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

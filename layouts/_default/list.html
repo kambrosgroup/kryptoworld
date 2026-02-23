@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<ul class="post-list" style="margin-top: 2rem;">
+    {{ range .Pages }}
+    <li class="post-item">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="post-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+        <p class="post-excerpt">{{ .Summary }}</p>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
