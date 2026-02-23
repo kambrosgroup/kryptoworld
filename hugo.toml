@@ -1,7 +1,6 @@
 baseURL = 'https://kryptoworld.space'
 languageCode = 'en-us'
 title = 'KryptoWorld'
-theme = 'paper'
 
 [params]
   author = 'KryptoWorld'
